@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  #game-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 20rem;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  #score {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  #instruction {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  #target-color {
+    font-weight: bold;
+  }
+  

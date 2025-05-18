@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #ff6e7f, #bfe9ff);
+  background-size: 500% 500%;
+  animation: animatedBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  color: #fff;
+}
+
+@keyframes animatedBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.center {
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+#banner span {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-shadow: 0 0 10px #0ff;
+}
+
+#clock-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 60px;
+  border-radius: 20px;
+  transform: rotateX(20deg) rotateY(20deg);
+  box-shadow:
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 60px #0ff,
+    0 0 80px #0ff;
+  transition: transform 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+#clock-container:hover {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+#clock {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff;
+}
+
+#date {
+  margin-top: 10px;
+  font-size: 20px;
+  text-shadow: 0 0 5px #ccc;
+}
+
+#timezone {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.85;
+  text-shadow: 0 0 4px #ccc;
+}
+
+@media (max-width: 600px) {
+  #clock {
+    font-size: 36px;
+  }
+
+  #date {
+    font-size: 16px;
+  }
+
+  #timezone {
+    font-size: 14px;
+  }
+
+  #clock-container {
+    padding: 20px 30px;
+  }
+}
+
+

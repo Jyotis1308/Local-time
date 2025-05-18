@@ -1,0 +1,163 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #68b0ab, #f6f4f1);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: #068cb5;
+  border-radius: 15px;
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 0 25px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fac9ed;
+  color: #212121;
+  padding: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(250, 201, 237, 0.6);
+  width: 100%;
+  user-select: none;
+}
+
+form p {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.15rem;
+  display: block;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+input[type='number'] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #ffdaf8;
+  background-color: #e3f6f5;
+  color: #212121;
+}
+
+input[type='number'].error {
+  border-color: #ff4c4c !important;
+  background-color: #fce4e4;
+}
+
+button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #212121;
+  background-color: #ffdaf8;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 218, 248, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #f9a5d5;
+  box-shadow: 0 10px 20px rgba(249, 165, 213, 0.9);
+}
+
+#results {
+  margin-top: 30px;
+  background-color: rgba(255, 218, 248, 0.9);
+  color: #212121;
+  padding: 20px 30px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow:
+    0 0 8px #ff8fcf,
+    0 0 15px #ff8fcf;
+  user-select: none;
+  min-height: 60px;
+  line-height: 1.3;
+}
+
+#weight-guide {
+  margin-top: 40px;
+  color: #ffdaf8;
+  text-align: center;
+  font-weight: 600;
+  user-select: none;
+}
+
+#weight-guide h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffe1f7;
+  text-shadow: 0 0 5px #ffcafc;
+}
+
+#weight-guide p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  letter-spacing: 0.6px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+    width: 90vw;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  button, input[type='number'] {
+    font-size: 1.2rem;
+  }
+  #results {
+    font-size: 1.4rem;
+    padding: 15px 20px;
+  }
+  #weight-guide h3 {
+    font-size: 1.5rem;
+  }
+  #weight-guide p {
+    font-size: 1rem;
+  }
+}
+
+  

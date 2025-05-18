@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom3</title>
+</head>
+<body style="background-color:rgb(125, 188, 208) ;color:rgb(96, 12, 12);">
+   <ul class="language">
+    <li> javascript</li>
+   </ul>
+</body>
+<script>
+    function addlanguage( langName){
+      const li=  document.createElement('li');
+      li.innerHTML=`${langName}`
+      document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("cpp")
+    function addOptilang(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilang('golgang')
+    //edit
+   const second= document.querySelector("li:nth-child(2)")
+   //second.innerHTML="Mojo"
+   const newli=document.createElement('li')
+      newli.textContent="Mojo"
+      second.replaceWith(newli)
+      //edit
+      const firstlang=document.querySelector("li:first-child")
+      firstlang.outerHTML='<li>typescript'
+      //remove
+      const lastlang =document.querySelector("li:last-child")
+      lastlang.remove()
+</script>
+</html>
